@@ -37,7 +37,7 @@ For the path resolution to execute flawlessly, maintain the following directory 
 
 ### Execution
 
-Run the script daily from your terminal or via a shortcut:
+Run the script daily from your terminal or via a shortcut (daily-tracker.bat):
 
 ```bash
 python "C:\Users\YourUsername\Documents\Notes\Script\daily_tracker.py"

@@ -10,7 +10,6 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 2. Target the parent folder (Daily Tracker) for reading and saving logs
 TARGET_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-#TARGET_DIR = r"C:\Users\Lenovo\Documents\Notes\Daily Tracker\"
 
 def get_yesterday_unfinished_tasks():
     """Looks for yesterday's tracker in the parent folder and extracts unfinished items."""
@@ -123,7 +122,7 @@ Date: {today_str} | Day: {day_name}
 *Template version 1.3 | Auto-directory initialization fix.*
 """
 
-    # FIX: Ensure the parent 'Daily Tracker' directory exists before creating the file
+    # Ensure the parent 'Daily Tracker' directory exists before creating the file
     os.makedirs(TARGET_DIR, exist_ok=True)
 
     with open(today_filepath, "w", encoding="utf-8") as f:
